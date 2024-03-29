@@ -1,0 +1,72 @@
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+/* register page css */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid white;
+    row-gap: 1rem;
+    padding: 1rem 0.75rem;
+    border-radius: 0.45rem;
+}
+
+.inp{
+    padding: 0.55rem;
+    border-radius: 0.25rem;
+    text-indent: 0.25rem;
+}
+
+.btn{
+    background-color: rgb(215, 55, 80);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.55rem;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: rgb(200, 99, 114); ;
+}
+
+.form p{
+    margin-left: 0.25rem;
+}
+
+a {
+    color: rgb(215, 55, 80);
+    text-decoration: none;
+}
+
+.nf {
+    justify-content: center;
+}
+
+.success{
+    width: 100%;
+    background-color: lightgreen;
+    color: rgb(1, 61, 45);
+    width: 50;
+    padding: 0.30rem;
+    border-radius: 0.25rem;
+}
+
+.invisible-msg {
+
+    width: fit-content;
+    opacity: 0;
+    font-size: 0.1rem;
+}
