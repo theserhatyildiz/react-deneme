@@ -70,3 +70,12 @@ a {
     opacity: 0;
     font-size: 0.1rem;
 }
+
+.error{
+    width: 100%;
+    background-color: lightpink;
+    color: rgb(215, 55, 80);
+    padding: 0.30rem;
+    border-radius: 0.25rem;
+    
+}
