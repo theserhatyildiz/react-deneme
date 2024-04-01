@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
+import { UserContext } from "../context/UserContext"
 import { Link, useNavigate } from "react-router-dom"
 
 
@@ -18,6 +19,10 @@ const [message,setMessage] = useState({
 })
 
 const navigate = useNavigate();
+
+const loggedData = useContext(UserContext);
+
+console.log(loggedData);
 
 
 // ------------------Functions------------------
@@ -68,12 +73,16 @@ function handleSubmit(event)
 
     })
     .then((data)=>{
+
+        console.log(data);
         
         if(data.token!==undefined)
         {
             localStorage.setItem("app-user",JSON.stringify(data));
 
-            navigate("/diet");
+            loggedData.setLoggedUser(data);
+
+            navigate("/diet");          
         }
     })
     .catch((err)=>{
