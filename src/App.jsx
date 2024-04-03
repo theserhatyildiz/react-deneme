@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Register from './componenet/Register'
 import Login from './componenet/Login'
 import NotFound from './componenet/NotFound'
-import Diet from './componenet/Diet'
+import Food from './componenet/Food'
 import Private from './componenet/Private'
 import Demo from './componenet/Demo'
 
@@ -29,7 +29,7 @@ function App() {
             <Route path='/' element={<Login/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/register' element={<Register/>}/>
-            <Route path='/diet' element={<Private Component={Diet}/>}/>
+            <Route path='/Food' element={<Private Component={Food}/>}/>
             <Route path='/demo' element={<Private Component={Demo}/>}/>
             <Route path='/*' element={<NotFound/>}/>
 

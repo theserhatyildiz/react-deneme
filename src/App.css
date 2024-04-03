@@ -79,3 +79,21 @@ a {
     border-radius: 0.25rem;
     
 }
+
+.diet-container {
+    flex-direction: column;
+}
+
+.search{
+    width: 100%;
+    padding: 0.60rem;
+    background-color: #ffff;
+    border-radius: 0.65rem;
+}
+
+.search-inp{
+    width: 100%;
+    border: none;
+    text-indent: 0.25rem;
+    font-size: 1rem;
+}
